@@ -8,6 +8,8 @@ body{
     margin: 0 auto;
   }
 
+ 
+
   h1{
     margin: 40px auto;
     color: #ff0aa7;
@@ -16,26 +18,43 @@ body{
 
   ul{
     margin:0;
+    width: auto;
     padding: 0;
-    list-style-type: square;
+    list-style-type: none;
+    
   }
 
   li{
-    padding: 6px 10px;
-    border: 1px solid #eee;
-    margin: 10px auto;
+    position: relative;
+    padding: 25px 12px 25px 12px;
+    border: none;
     color: #333;
-    margin: 0;
     text-transform: capitalize;
     text-align: center;
+    letter-spacing: 2px;
   }
+
+  ul li{
+    background: #f9f9f9;
+}
 
   .close {
     position: relative;
+    float:center;
     right: 0;
     top: 0;
-    padding: 12px 16px 12px 16px;
+    padding: 5px 5px;
+    
 }
+
+.check{
+  position:relative;
+  cursor: pointer;
+  width:20px;
+  border: 1px solid;
+  float:justify;
+  padding: 0px;
+  }
 
 .close:hover {
     background-color: #f44336;
@@ -51,7 +70,7 @@ body{
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
+    width: 90%;
     padding: 10px;
     float: center;
     font-size: 16px;
@@ -70,6 +89,16 @@ body{
     width: 25%;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  .edit{
+    background: #ff0aa7;
+    cursor: pointer;
+
+  }
+
+  .check:checked{
+    text-decoration: line-through;
   }
 
   .addBtn:hover{
